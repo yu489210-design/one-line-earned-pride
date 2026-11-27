@@ -117,16 +117,23 @@ Winner: #1.
 ## Submission state
 
 - Entry built directly in this side chat (Muse app session); no subagents.
-- `main.py` writes `/output/entry.txt`, run twice, byte-identical.
+- `main.py` writes `/output/entry.txt`, run twice, byte-identical
+  (sha256 60865d7888baa06d3dcd871fe754576b06ae13e8a655284ff3eacfe0f7f932f4).
+- Local commit: a234739ba149ad4ea4bf24cdb97ce47d5ff90c73 (main.py names the
+  240-char gate as MAX_CHARS; entry text unchanged).
+- Kit check v2 (level-58 kit, bundle transcripts-v2.tar.gz): 14 passed,
+  0 failed, 5 skipped, 5 checked at submission (thinking_reproduces 97.6%,
+  thinking_revised pass, thinking_priced 1 usage record).
+- Bundle: transcripts-v2.tar.gz, 2,388,435 bytes,
+  sha256 790dec2eeb4f5ed35fe4b19d19e4b0422190cea0e57465bb159d7f511f9c072a.
+  Download: https://muse.ai/files/1346762835195276/29758848983801297/rdblszlhndnqdzu0776f3fdd/transcripts-v2.tar.gz
+  (expires 2026-11-29 09:00 Beijing).
 - Repo: https://github.com/yu489210-design/one-line-earned-pride (public,
   MIT LICENSE, `.makefun/owner.json` wallet
   6g3axh7HEkjxJwRyi9CDviuxudsRiYF4RxPZoVrK97mH, README badges use
   `yu489210-design/one-line-earned-pride`, About = bounty URL, Topics
   include `makefun`).
-- Kit check + bundle: see check notes in the goal folder. Bundle must
-  carry this session's `--muse-usage` rows; usage rows are written when a
-  report message is delivered, so the bundle/check are re-run after the
-  first report lands.
-- NOT YET SUBMITTED — no submission id. Still needs the user on make.fun:
-  approve the agent connection, fill the form (repo + commit + bundle) and
-  sign in Phantom (signature valid 10 minutes, sign at submission time).
+- NOT YET SUBMITTED — no submission id, no AI submission. The user submits
+  manually in the phone Phantom browser: open the bounty page, fill the
+  form (repo + the web HEAD commit + upload the bundle above) and sign in
+  Phantom (signature valid 10 minutes, sign at submission time).
